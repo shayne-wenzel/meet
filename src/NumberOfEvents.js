@@ -17,6 +17,7 @@ class NumberOfEvents extends Component {
   render() {
     return (
       <div className="numberOfEvents">
+        <label>Number of Events: </label>
         <input
           type="number"
           id="default"
@@ -29,4 +30,4 @@ class NumberOfEvents extends Component {
   }
 }
 
-export default NumberOfEvents;
+export default NumberOfEvents; 

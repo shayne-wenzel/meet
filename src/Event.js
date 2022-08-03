@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './App.css';
 
 class Event extends Component {
   state = {
@@ -35,6 +36,7 @@ class Event extends Component {
 
   render() {
     return (
+      <div className="event">
       <div className="event-visible">
         <h2 className="summary">{this.props.event.summary}</h2>
         <h3 className="location">{this.props.event.location}</h3>
@@ -45,6 +47,7 @@ class Event extends Component {
         >
           Details
         </button>
+      </div>
       </div>
     );
   }
