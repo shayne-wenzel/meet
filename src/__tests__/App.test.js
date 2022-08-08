@@ -91,4 +91,4 @@ describe('<App /> inergration', () => {
     AppWrapper.unmount();
   });
 
-});
+}); 
