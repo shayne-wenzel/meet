@@ -1,4 +1,27 @@
 As a - User
+I should be able to - “filter events by city”
+So that - I can see the list of events that take place in that city 
+  
+  Feature 1: Filter events by city
+
+    Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
+      Given: user hasn’t searched for any city
+      When: the user opens the app
+      Then: the user should see the list of upcoming events.
+
+    Scenario 2: User should see a list of suggestions when they search for a city
+      Given: the main page is open
+      When: the user starts typing in the city textbox
+      Then: the user should receive a list of cities (suggestions) that match what they’ve typed
+
+    Scenario 3: User can select a city from the suggested list
+      Given: user was typing “Berlin” in the city textbox
+      And the list of suggested cities is showing
+      When: the user selects a city (e.g., “Berlin, Germany”) from the list
+      Then: their city should be changed to that city (i.e., “Berlin, Germany”)
+      And the user should receive a list of upcoming events in that city  
+
+As a - User
 I should be able to - click on a link that can expand and collapse event details
 So that - I can see it only when I want
 
@@ -28,7 +51,7 @@ So that - I can see as few or many as I want at a time
     Scenario 1: When the user hasn’t specified a number, 32 is the default number
       Given: The user has started a new search and didn't change the filter settings
       When: They decide to keep searching without changing it
-      Then: Each page will show only 32 results
+      Then: Each page will show the default amount
 
     Scenario 2: Users can change the number of events they want to see
       Given: There are too few or too many search results
