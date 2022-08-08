@@ -38,4 +38,4 @@ describe("<NumberofEvents /> component", () => {
     expect(NumberOfEventsWrapper.state("numberOfEvents")).toEqual(12);
   });
 
-}); 
+});  
