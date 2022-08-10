@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import * as atatus from 'atatus-spa';
+
+atatus.config('9b084ff7cd5a492f99c5075765998455').install();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
