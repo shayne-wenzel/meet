@@ -11,7 +11,7 @@ Calendar API to fetch upcoming events.
 Install dependencies for meet with npm
 
 ```bash
-  git clone https://github.com/LeezaJee/meet.git
+  git clone https://github.com/shayne-wenzel/meet.git
   cd meet
   npm install
   
