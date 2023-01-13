@@ -1,3 +1,61 @@
+# Meet App
+
+a serverless, progressive web application (PWA) built with React using a
+test-driven development (TDD) technique. The application uses the Google
+Calendar API to fetch upcoming events.
+
+<br>
+
+## Installation
+
+Install dependencies for meet with npm
+
+```bash
+  git clone https://github.com/LeezaJee/meet.git
+  cd meet
+  npm install
+  
+```
+   
+<br>
+
+## Dependencies
+
+**For Development**
+- React
+- React Bootstrap
+- Recharts (for Data Visualization)
+
+**For Testing**
+- Jest
+- Jest cucumber (ntegration Testing)
+- Puppeteer (End-To-End-Testing)
+- Enzyme
+- Enzyme Adapter React 17
+- Atatus browser testing
+
+**Serverless**
+
+AWS Lambda was utilized to 
+- generate a token.
+- pass it to the application after request
+
+<br>
+
+## Deployment
+
+The app is deployed to github pages.
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+ 
+<br>
+
+## Features
+
 As a - User
 I should be able to - “filter events by city”
 So that - I can see the list of events that take place in that city 
